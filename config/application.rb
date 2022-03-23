@@ -25,7 +25,7 @@ module Phase4RailsPuttingItAllTogetherAuth
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore
 
-    # Use SameSite=Strict for all cookies to help protect against CSRF
+    # Use SameSite=Strict for all cookies to help protect against CSR
     # https://owasp.org/www-community/SameSite
     config.action_dispatch.cookies_same_site_protection = :strict
 
